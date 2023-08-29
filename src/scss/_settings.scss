@@ -1,0 +1,23 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Скрываем Scrollbar */
+body {
+  scrollbar-width: none; /* Firefox */
+}
+body::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.site-container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  perspective: 1500px;
+  font-family: --font-family;
+}
